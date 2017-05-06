@@ -81,7 +81,7 @@ public class SearchByNameAdapter extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-        Toast.makeText(ctx,result,Toast.LENGTH_LONG).show();
+        //Toast.makeText(ctx,result,Toast.LENGTH_LONG).show();
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONArray jsonArray=jsonObject.getJSONArray("hospital");
